@@ -26,21 +26,28 @@
 #import <Foundation/Foundation.h>
 #import "AppDelegate.h"
 
-//用于存放全局宏定义 或者 静态字符串
+/**自定义工厂类，功能类。其中存放各种自定义方法*/
+#import "Factory.h"
+
+/**  用于存放全局宏定义 或者 静态字符串 */
 #import "Constants.h"
 
+/**  第三方网络请求类库，封装了系统的NSURLSession&NSOperation*/
 #import <AFNetworking.h>
+/**  对UIKit类添加类扩展，让诸如UIButton，UIImageView等拥有图片加载功能 */
 #import <UIKit+AFNetworking.h>
 
-
+/**  改变系统的target+selector模式为block模式。带来紧凑的代码风格，高效率的回调执行*/
 #import <BlocksKit.h>
 #import <BlocksKit+MessageUI.h>
 #import <BlocksKit+UIKit.h>
 
-#import <MJRefresh.h>
-#import <MJExtension.h>
+#import <MJRefresh.h>/**   优秀的滚动视图头部和脚部刷新*/
+#import <MJExtension.h>/**   优秀的Json解析类库*/
 
+/**   第三方对于数据库的操作类库，是对于系统Squlite3的封装，使用SQL语句操作数据库*/
 #import <FMDB/FMDB.h>
+/**   优秀的替换NSLog的第三方，更加省资源，并且可以定义打印级别*/
 #import <CocoaLumberjack.h>
 
 #ifdef DEBUG
@@ -49,11 +56,44 @@ static const int ddLogLevel = DDLogLevelVerbose;
 static const int ddLogLevel = DDLogLevelError;
 #endif
 
+/**   第三方socket通讯类库，对系统CFNetwork类库进行封装*/
+//#import <CocoaAsyncSocket.h>
+#import <GCDAsyncSocket.h>
+#import <GCDAsyncUdpSocket.h>
+
+/**   实现安卓的toast风格提示，弹出提示框架*/
 #import <MBProgressHUD.h>
+
+/**   与MBProgressHUb风格很相似*/
 //#import <SVProgressHUD.h>
+
+/**   让UIKit框架拥有网络功能，功能与UIKit+AFNetWork一致，效率稍快*/
 //#import <UIImageView+WebCache.h>
+
+/**  好用的链式书写AutoLayout的第三方类库*/
 #import <Masonry.h>
 
+/**  自定义在界面上弹出提示的类拓展*/
 #import "NSObject+Common.h"
 
+/**  闪光效果——iPhone锁屏界面*/
+#import <FBShimmeringView.h>
+#import <FBShimmeringLayer.h>
+
+/**  能够提高UI的流畅性，并缩短响应时间，线程安全，能够吧UI的耗时操作放到分线程中执行*/
+//#import <AsyncDisplayKit/AsyncDisplayKit.h>
+
+/**  扁平化风格*/
+#import <FlatUIKit.h>
+
+/**  侧边栏风格*/
+#import <RESideMenu.h>
+
+/**  Cell滑动，出现多个功能按钮*/
+#import <SWTableViewCell.h>
+
+/**  图片浏览器*/
+#import <MWPhotoBrowser.h>
+
 #endif /* PrefixHeader_pch */
+

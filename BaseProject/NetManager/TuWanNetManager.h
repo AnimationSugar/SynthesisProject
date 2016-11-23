@@ -34,7 +34,7 @@ typedef NS_ENUM(NSUInteger,InfoType) {
  *  获取某种类型的资讯·
  *
  *  @param type  资讯类型
- *  @param start 当前资讯起始的索引值 0+
+ *  @param start 当前资讯起始的索引值 0,11,22,33
  *
  *  @return 请求所在任务
  */

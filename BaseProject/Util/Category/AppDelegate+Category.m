@@ -8,6 +8,8 @@
 
 #import "AppDelegate+Category.h"
 #import <AFNetworkActivityIndicatorManager.h>
+#import "MobClick.h"
+#define UMAppKey @"582ea405677baa50d30003c0"
 
 @implementation AppDelegate (Category)
 
@@ -34,6 +36,9 @@
         }
     }];
     [[AFNetworkReachabilityManager sharedManager] startMonitoring];
+    //启动友盟统计功能
+    [MobClick startWithAppkey:@"582ea405677baa50d30003c0"];
+    
 }
 
 
