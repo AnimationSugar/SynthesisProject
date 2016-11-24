@@ -7,7 +7,7 @@
 //
 
 #import "TuWanViewController.h"
-
+#import "TuWanViewModel.h"
 @interface TuWanViewController ()
 
 @end
@@ -26,6 +26,7 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor greenSeaColor];
     self.title = @"兔玩";
+    
     
     [Factory addMenuItemToVC:self];
     
