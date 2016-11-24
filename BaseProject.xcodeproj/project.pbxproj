@@ -89,6 +89,8 @@
 		85C80A0E1DE56A240042E3CB /* Factory.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C80A0D1DE56A240042E3CB /* Factory.m */; };
 		85C80ABA1DE56A660042E3CB /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C80A781DE56A660042E3CB /* iCarousel.m */; };
 		85D181821DE5CACE00061163 /* TuWanViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 85D181811DE5CACE00061163 /* TuWanViewModel.m */; };
+		85D181851DE67C4700061163 /* TuWanListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85D181841DE67C4700061163 /* TuWanListController.m */; };
+		85D181881DE67CDC00061163 /* TuWanListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 85D181871DE67CDC00061163 /* TuWanListCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -241,6 +243,10 @@
 		85C80A781DE56A660042E3CB /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
 		85D181801DE5CACE00061163 /* TuWanViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuWanViewModel.h; sourceTree = "<group>"; };
 		85D181811DE5CACE00061163 /* TuWanViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuWanViewModel.m; sourceTree = "<group>"; };
+		85D181831DE67C4700061163 /* TuWanListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuWanListController.h; sourceTree = "<group>"; };
+		85D181841DE67C4700061163 /* TuWanListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuWanListController.m; sourceTree = "<group>"; };
+		85D181861DE67CDC00061163 /* TuWanListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuWanListCell.h; sourceTree = "<group>"; };
+		85D181871DE67CDC00061163 /* TuWanListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuWanListCell.m; sourceTree = "<group>"; };
 		85E35BB01DE289A80096E9AC /* DuoWanRequestPath.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DuoWanRequestPath.h; sourceTree = "<group>"; };
 		877D8522BD16BE0A1FED883D /* Pods-BaseProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BaseProject/Pods-BaseProject.debug.xcconfig"; sourceTree = "<group>"; };
 		C6645D572C0DFD4DBCDA5D22 /* Pods-BaseProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-BaseProject/Pods-BaseProject.release.xcconfig"; sourceTree = "<group>"; };
@@ -399,6 +405,8 @@
 		3886C0B51BD74A4A0014E661 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				85D181861DE67CDC00061163 /* TuWanListCell.h */,
+				85D181871DE67CDC00061163 /* TuWanListCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -640,6 +648,8 @@
 			children = (
 				856A537F1DE57A35006D274E /* TuWanViewController.h */,
 				856A53801DE57A35006D274E /* TuWanViewController.m */,
+				85D181831DE67C4700061163 /* TuWanListController.h */,
+				85D181841DE67C4700061163 /* TuWanListController.m */,
 			);
 			path = "兔玩游戏";
 			sourceTree = "<group>";
@@ -873,6 +883,7 @@
 				854B0C3F1DE12871003185E2 /* ToolMenuModel.m in Sources */,
 				3886C0BE1BD74AFE0014E661 /* BaseNetManager.m in Sources */,
 				854B0C461DE12871003185E2 /* RankingListModel.m in Sources */,
+				85D181881DE67CDC00061163 /* TuWanListCell.m in Sources */,
 				854B0C5C1DE19BC3003185E2 /* TuWanNetManager.m in Sources */,
 				854B0C431DE12871003185E2 /* TuWanPicModel.m in Sources */,
 				856A53541DE576C9006D274E /* PSCollectionView.m in Sources */,
@@ -882,6 +893,7 @@
 				3804CE541BD758F10046C8C8 /* NSString+QRCode.m in Sources */,
 				854B0C401DE12871003185E2 /* ZBCategoryModel.m in Sources */,
 				854B0C311DE12871003185E2 /* AllHeroModel.m in Sources */,
+				85D181851DE67C4700061163 /* TuWanListController.m in Sources */,
 				854B0C3C1DE12871003185E2 /* ItemDetailModel.m in Sources */,
 				854B0C3B1DE12871003185E2 /* HeroWeekDataModel.m in Sources */,
 				3804CE531BD758F10046C8C8 /* NSString+PJR.m in Sources */,
