@@ -48,6 +48,9 @@
 //是否有头部滚动栏
 @property(nonatomic,getter=isExistIndexPic) BOOL existIndexPic;
 
+/**通过行数返回此行中对应的图片链接数组*/
+-(NSArray *)iconURLSForRowInList:(NSInteger)row;
+
 @end
 
 

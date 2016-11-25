@@ -91,6 +91,7 @@
 		85D181821DE5CACE00061163 /* TuWanViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 85D181811DE5CACE00061163 /* TuWanViewModel.m */; };
 		85D181851DE67C4700061163 /* TuWanListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85D181841DE67C4700061163 /* TuWanListController.m */; };
 		85D181881DE67CDC00061163 /* TuWanListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 85D181871DE67CDC00061163 /* TuWanListCell.m */; };
+		85D1818B1DE6BA5100061163 /* TuWanImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 85D1818A1DE6BA5100061163 /* TuWanImageCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -247,6 +248,8 @@
 		85D181841DE67C4700061163 /* TuWanListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuWanListController.m; sourceTree = "<group>"; };
 		85D181861DE67CDC00061163 /* TuWanListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuWanListCell.h; sourceTree = "<group>"; };
 		85D181871DE67CDC00061163 /* TuWanListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuWanListCell.m; sourceTree = "<group>"; };
+		85D181891DE6BA5100061163 /* TuWanImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuWanImageCell.h; sourceTree = "<group>"; };
+		85D1818A1DE6BA5100061163 /* TuWanImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuWanImageCell.m; sourceTree = "<group>"; };
 		85E35BB01DE289A80096E9AC /* DuoWanRequestPath.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DuoWanRequestPath.h; sourceTree = "<group>"; };
 		877D8522BD16BE0A1FED883D /* Pods-BaseProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BaseProject/Pods-BaseProject.debug.xcconfig"; sourceTree = "<group>"; };
 		C6645D572C0DFD4DBCDA5D22 /* Pods-BaseProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-BaseProject/Pods-BaseProject.release.xcconfig"; sourceTree = "<group>"; };
@@ -407,6 +410,8 @@
 			children = (
 				85D181861DE67CDC00061163 /* TuWanListCell.h */,
 				85D181871DE67CDC00061163 /* TuWanListCell.m */,
+				85D181891DE6BA5100061163 /* TuWanImageCell.h */,
+				85D1818A1DE6BA5100061163 /* TuWanImageCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -906,6 +911,7 @@
 				85C80ABA1DE56A660042E3CB /* iCarousel.m in Sources */,
 				854B0C5F1DE19BD9003185E2 /* XiMaNetManager.m in Sources */,
 				854B0C381DE12871003185E2 /* HeroGiftModel.m in Sources */,
+				85D1818B1DE6BA5100061163 /* TuWanImageCell.m in Sources */,
 				3804CE511BD758F10046C8C8 /* AppDelegate+Category.m in Sources */,
 				854B0C371DE12871003185E2 /* HeroDetailModel.m in Sources */,
 				854B0C321DE12871003185E2 /* BestGroupModel.m in Sources */,

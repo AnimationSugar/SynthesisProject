@@ -9,6 +9,7 @@
 #import "TuWanListController.h"
 #import "TuWanListCell.h"
 #import "TuWanViewModel.h"
+#import "TuWanImageCell.h"
 @interface TuWanListController ()
 @property(nonatomic,strong)TuWanViewModel *tuwanVM;
 @end
@@ -23,6 +24,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.tableView registerClass:[TuWanListCell class] forCellReuseIdentifier:@"ListCell"];
+    [self.tableView registerClass:[TuWanImageCell class] forCellReuseIdentifier:@"ImageCell"];
      self.tableView.header  = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
          [self.tuwanVM refreshDataCompletionHandle:^(NSError *error) {
              [self.tableView.header endRefreshing];
@@ -30,7 +32,7 @@
          }];
      }];
     [self.tableView.header beginRefreshing];
-    self.tableView.footer = [MJRefreshBackFooter footerWithRefreshingBlock:^{
+    self.tableView.footer = [MJRefreshAutoNormalFooter footerWithRefreshingBlock:^{
         [self.tuwanVM getMoreDataCompletionHandle:^(NSError *error) {
             [self.tableView.footer endRefreshing];
             [self.tableView reloadData];
@@ -53,8 +55,17 @@
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    if ([self.tuwanVM containImages:indexPath.row]) {
+        TuWanImageCell *cell =[tableView dequeueReusableCellWithIdentifier:@"ImageCell"];
+        cell.titileLb.text = [self.tuwanVM titleForRowInList:indexPath.row];
+        cell.clicksNumLb.text = [self.tuwanVM clicksForRowInList:indexPath.row];
+        [cell.iconIV0 setImageWithURL:[self.tuwanVM iconURLSForRowInList:indexPath.row][0] placeholderImage:[UIImage imageNamed:@"find_hot_albumcover"]];
+        [cell.iconIV1 setImageWithURL:[self.tuwanVM iconURLSForRowInList:indexPath.row][1] placeholderImage:[UIImage imageNamed:@"find_hot_albumcover"]];
+        [cell.iconIV2 setImageWithURL:[self.tuwanVM iconURLSForRowInList:indexPath.row][2] placeholderImage:[UIImage imageNamed:@"find_hot_albumcover"]];
+        return cell;
+    }
     TuWanListCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ListCell" forIndexPath:indexPath];
-    [cell.iconIV setImageWithURL:[self.tuwanVM iconURLForRowInList:indexPath.row] placeholderImage:[UIImage imageNamed:@"feedbackAlert_close"]];
+    [cell.iconIV setImageWithURL:[self.tuwanVM iconURLForRowInList:indexPath.row] placeholderImage:[UIImage imageNamed:@"find_hot_albumcover"]];
     cell.titleLable.text = [self.tuwanVM titleForRowInList:indexPath.row];
     cell.longTitleLb.text = [self.tuwanVM descForRowInList:indexPath.row];
     cell.clicksNumLb.text = [self.tuwanVM clicksForRowInList:indexPath.row];
@@ -66,6 +77,10 @@
 kRemoveCellSeparator
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    return [self.tuwanVM containImages:indexPath.row]?125:90;
 }
 
 

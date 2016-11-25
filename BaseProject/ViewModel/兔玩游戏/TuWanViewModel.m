@@ -32,7 +32,7 @@
     _start += 11;
     [self getDataFromNetCompleteHandle:completionHandle];
 }
--(void)getDataCompletionHandle:(CompletionHandle)completionHandle{
+- (void)getDataFromNetCompleteHandle:(CompletionHandle)completionHandle{
     self.dataTask = [TuWanNetManager getTuWanInfoWithType:_type start:_start completionHandle:^(TuWanModel * model, NSError *error) {
         if (_start == 0) {
             [self.dataArr removeAllObjects];
@@ -72,6 +72,17 @@
 }
 -(NSURL *)detailURLForRowInIndexList:(NSInteger)row{
     return [NSURL URLWithString:[self modelForArr:self.indexPicArr row:row].html5];
+}
+
+
+-(NSArray *)iconURLSForRowInList:(NSInteger)row{
+    NSArray *arr = [self modelForArr:self.dataArr row:row].showitem;
+    NSMutableArray *array = [NSMutableArray new];
+    for (int i = 0; i<arr.count; i++) {
+        TuWanDataIndexpicShowitemModel *model   = arr[i];
+        [array addObject:[NSURL URLWithString:model.pic]];
+    }
+    return [array copy];
 }
 
 

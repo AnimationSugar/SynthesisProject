@@ -16,7 +16,7 @@ static AFHTTPSessionManager *manager = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         manager = [AFHTTPSessionManager manager];
-        manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/html", @"application/json", @"text/json", @"text/javascript", nil];
+        manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/html", @"application/json", @"text/json", @"text/javascript", @"text/plain", nil];
     });
     return manager;
 }
@@ -27,11 +27,11 @@ static AFHTTPSessionManager *manager = nil;
     NSArray *keys = params.allKeys;
     NSInteger count = keys.count;
     //OC语言的特性是runtime，实际上我们调用一个方法，底层操作是在一个方法列表中搜索你调用的方法所在的地址，然后调用完毕之后把这个方法名转移到常用方法列表。所以如果再次执行某个方法时就在常用方法列表中搜索调用，效率更高
-    for (int i = 0; i< count; i++) {
+    for (int i = 0; i < count; i++) {
         if (i == 0) {
-            [percentPath appendFormat:@"?%@=%@",keys[i],params[keys[i]]];
+            [percentPath appendFormat:@"?%@=%@", keys[i], params[keys[i]]];
         }else{
-            [percentPath appendFormat:@"&%@=%@",keys[i],params[keys[i]]];
+            [percentPath appendFormat:@"&%@=%@", keys[i], params[keys[i]]];
         }
     }
     //吧字符串的中文转换成%形式
@@ -40,7 +40,8 @@ static AFHTTPSessionManager *manager = nil;
 }
 
 + (id)GET:(NSString *)path parameters:(NSDictionary *)params completionHandler:(void(^)(id responseObj, NSError *error))complete{
-    path = [self percentPathWithPath:path params:params];
+    //debug日志：不需要转化二次，已经在子类中实现
+//    path = [self percentPathWithPath:path params:params];
     
     //打印网络请求， DDLog  与  NSLog 功能一样
     DDLogVerbose(@"Request Path: %@, Params:%@", path, params);

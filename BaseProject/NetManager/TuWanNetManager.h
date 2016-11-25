@@ -12,21 +12,21 @@
 #import "TuWanPicModel.h"
 //只要共用一个解析类的请求，就可以合起来写，只需要使用枚举变量，来决定不同的请求地址即可
 typedef NS_ENUM(NSUInteger,InfoType) {
-    InfoTypeTouTiao,      //头条
-    InfoTypeDuJia,         //独家
-    InfoTypeAnHei3,//暗黑3
-    InfoTypeMoShou,//魔兽
-    InfoTypeFengBao,//风暴
-    InfoTypeLuShi,//炉石
-    InfoTypeXingJi2,//星际2
-    InfoTypeShouWang,//守望
-    InfoTypeTuPian,//图片
-    InfoTypeShiPing,//视频
-    InfoTypeGongLue,//攻略
-    InfoTypeHuanHua,//幻化
-    InfoTypeQuWen,//趣闻
-    InfoTypeCos,//COS
-    InfoTypeMeiNv//美女
+    InfoTypeTouTiao,        //头条
+    InfoTypeDuJia,          //独家
+    InfoTypeAnHei3,         //暗黑3
+    InfoTypeMoShou,         //魔兽
+    InfoTypeFengBao,        //风暴
+    InfoTypeLuShi,          //炉石
+    InfoTypeXingJi2,        //星际2
+    InfoTypeShouWang,       //守望
+    InfoTypeTuPian,         //图片
+    InfoTypeShiPing,        //视频
+    InfoTypeGongLue,        //攻略
+    InfoTypeHuanHua,        //幻化
+    InfoTypeQuWen,          //趣闻
+    InfoTypeCos,            //COS
+    InfoTypeMeiNv           //美女
     
 };
 @interface TuWanNetManager : BaseNetManager
