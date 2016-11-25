@@ -11,6 +11,7 @@
 #import "TuWanViewModel.h"
 #import "TuWanImageCell.h"
 #import "iCarousel.h"
+#import "TuWanHtmlViewController.h"
 
 @interface TuWanListController ()<iCarouselDelegate,iCarouselDataSource>
 @property(nonatomic,strong)TuWanViewModel *tuwanVM;
@@ -47,7 +48,7 @@
     }];
     _pageControl = [UIPageControl new];
     _pageControl.numberOfPages = self.tuwanVM.indexPicNumber;
-    _pageControl.currentPageIndicatorTintColor = [UIColor whiteColor];
+    _pageControl.currentPageIndicatorTintColor = kNaviTitleColor;
     _pageControl.pageIndicatorTintColor = [UIColor grayColor];
     [bottomView addSubview:_pageControl];
     [_pageControl mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -185,10 +186,21 @@
 kRemoveCellSeparator
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    if ([self.tuwanVM isHtmlInListForRow:indexPath.row]) {
+        TuWanHtmlViewController *vc = [[TuWanHtmlViewController alloc]initWithURL:[self.tuwanVM detailURLForRowInList:indexPath.row]];
+        [self.navigationController pushViewController:vc animated:YES];
+    }
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     
     return [self.tuwanVM containImages:indexPath.row]?135:90;
+}
+//滚动栏中被选中出发
+-(void)carousel:(iCarousel *)carousel didSelectItemAtIndex:(NSInteger)index{
+    if ([self.tuwanVM isHtmlInIndexPicForRow:index]) {
+        TuWanHtmlViewController *vc = [[TuWanHtmlViewController alloc]initWithURL:[self.tuwanVM detailURLForRowInIndexPic:index]];
+        [self.navigationController pushViewController:vc animated:YES];
+    }
 }
 
 

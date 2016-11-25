@@ -85,6 +85,29 @@
     return [array copy];
 }
 
+//判断详细内容的显示种类
+/** 判断数据类型是视频  video*/
+-(BOOL)isVideoInListForRow:(NSInteger)row{
+    return [[self modelForArr:self.dataArr row:row].type isEqualToString:@"video"];
+}
+-(BOOL)isVideoInIndexPicForRow:(NSInteger)row{
+    return [[self modelForArr:self.indexPicArr row:row].type isEqualToString:@"video"];
+}
+/** 判断数据类型是图片  pic*/
+-(BOOL)isPicInListForRow:(NSInteger)row{
+    return [[self modelForArr:self.dataArr row:row].type isEqualToString:@"pic"];
+}
+-(BOOL)isPicInIndexPicForRow:(NSInteger)row{
+    return [[self modelForArr:self.indexPicArr row:row].type isEqualToString:@"pic"];
+}
+/** 判断数据类型是Html  all*/
+-(BOOL)isHtmlInListForRow:(NSInteger)row{
+    return [[self modelForArr:self.dataArr row:row].type isEqualToString:@"all"];
+}
+-(BOOL)isHtmlInIndexPicForRow:(NSInteger)row{
+    return [[self modelForArr:self.indexPicArr row:row].type isEqualToString:@"all"];
+}
+
 
 //返回当前头部是否为空
 -(BOOL)isExistIndexPic{
@@ -101,7 +124,6 @@
 -(BOOL)containImages:(NSInteger)row{
     return [[self modelForArr:self.dataArr row:row].showtype isEqualToString:@"1"];
 }
-
 @end
 
 
