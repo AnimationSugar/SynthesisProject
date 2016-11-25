@@ -64,13 +64,13 @@
 -(NSInteger)indexPicNumber{
     return self.indexPicArr.count;
 }
--(NSURL *)iconURLForRowInIndexList:(NSInteger)row{
+-(NSURL *)iconURLForRowInIndexPic:(NSInteger)row{
     return [NSURL URLWithString:[self modelForArr:self.indexPicArr row:row].litpic];
 }
--(NSString *)titleForRowInIndexList:(NSInteger)row{
+-(NSString *)titleForRowInIndexPic:(NSInteger)row{
     return [self modelForArr:self.indexPicArr row:row].title;
 }
--(NSURL *)detailURLForRowInIndexList:(NSInteger)row{
+-(NSURL *)detailURLForRowInIndexPic:(NSInteger)row{
     return [NSURL URLWithString:[self modelForArr:self.indexPicArr row:row].html5];
 }
 

@@ -7,10 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "TRImageView.h"
 @interface TuWanListCell : UITableViewCell
 /**   左侧图片 */
-@property(nonatomic,strong)UIImageView *iconIV;
+@property(nonatomic,strong)TRImageView *iconIV;
 /**   题目标签 */
 @property(nonatomic,strong)UILabel *titleLable;
 /**   长题目标签*/

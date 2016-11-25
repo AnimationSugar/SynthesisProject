@@ -32,15 +32,15 @@
 -(NSString *)clicksForRowInList:(NSInteger)row;
 
 //滚动展示栏的图片
--(NSURL *)iconURLForRowInIndexList:(NSInteger)row;
+-(NSURL *)iconURLForRowInIndexPic:(NSInteger)row;
 //滚动展示栏的文字
--(NSString *)titleForRowInIndexList:(NSInteger)row;
+-(NSString *)titleForRowInIndexPic:(NSInteger)row;
 //滚动展示栏的图片数量
 @property(nonatomic)NSInteger indexPicNumber;
 //获取列表中某行数据对应的html5链接
 -(NSURL *)detailURLForRowInList:(NSInteger)row;
 //获取展示栏中某行数据对应的html5链接
--(NSURL *)detailURLForRowInIndexList:(NSInteger)row;
+-(NSURL *)detailURLForRowInIndexPic:(NSInteger)row;
 
 
 //用于存放头部滚动栏

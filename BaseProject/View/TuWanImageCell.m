@@ -25,23 +25,23 @@
     }
     return _clicksNumLb;
 }
--(UIImageView *)iconIV0{
+-(TRImageView *)iconIV0{
     if (!_iconIV0) {
-        _iconIV0 = [[UIImageView alloc]init];
-        //_iconIV0.contentMode = UIViewContentModeScaleAspectFit;
+        _iconIV0 = [[TRImageView alloc]init];
+        
     }
     return _iconIV0;
 }
--(UIImageView *)iconIV1{
+-(TRImageView *)iconIV1{
     if (!_iconIV1) {
-        _iconIV1 = [[UIImageView alloc]init];
+        _iconIV1 = [[TRImageView alloc]init];
         //_iconIV1.contentMode = UIViewContentModeScaleAspectFit;
     }
     return _iconIV1;
 }
--(UIImageView *)iconIV2{
+-(TRImageView *)iconIV2{
     if (!_iconIV2) {
-        _iconIV2 = [[UIImageView alloc]init];
+        _iconIV2 = [[TRImageView alloc]init];
         //_iconIV2.contentMode = UIViewContentModeScaleAspectFit;
     }
     return _iconIV2;
@@ -66,7 +66,7 @@
             make.width.mas_lessThanOrEqualTo(70);
         }];
         [self.iconIV0 mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.height.mas_equalTo(78);
+            make.height.mas_equalTo(88);
             make.left.mas_equalTo(10);
             make.top.mas_equalTo(_titileLb.mas_bottom).mas_equalTo(5);
             

@@ -45,6 +45,7 @@
 		854B0C591DE19BAC003185E2 /* DuoWanNetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 854B0C581DE19BAC003185E2 /* DuoWanNetManager.m */; };
 		854B0C5C1DE19BC3003185E2 /* TuWanNetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 854B0C5B1DE19BC3003185E2 /* TuWanNetManager.m */; };
 		854B0C5F1DE19BD9003185E2 /* XiMaNetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 854B0C5E1DE19BD9003185E2 /* XiMaNetManager.m */; };
+		855A29AC1DE7C38B007704F3 /* TRImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 855A29AB1DE7C38B007704F3 /* TRImageView.m */; };
 		856A53101DE57551006D274E /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 856A530F1DE57551006D274E /* libz.tbd */; };
 		856A53521DE576C9006D274E /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 856A53121DE576C9006D274E /* .gitignore */; };
 		856A53531DE576C9006D274E /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 856A53131DE576C9006D274E /* LICENSE */; };
@@ -172,6 +173,8 @@
 		854B0C5B1DE19BC3003185E2 /* TuWanNetManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuWanNetManager.m; sourceTree = "<group>"; };
 		854B0C5D1DE19BD9003185E2 /* XiMaNetManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XiMaNetManager.h; sourceTree = "<group>"; };
 		854B0C5E1DE19BD9003185E2 /* XiMaNetManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XiMaNetManager.m; sourceTree = "<group>"; };
+		855A29AA1DE7C38B007704F3 /* TRImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRImageView.h; sourceTree = "<group>"; };
+		855A29AB1DE7C38B007704F3 /* TRImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRImageView.m; sourceTree = "<group>"; };
 		856A530F1DE57551006D274E /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		856A53121DE576C9006D274E /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		856A53131DE576C9006D274E /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
@@ -412,6 +415,8 @@
 				85D181871DE67CDC00061163 /* TuWanListCell.m */,
 				85D181891DE6BA5100061163 /* TuWanImageCell.h */,
 				85D1818A1DE6BA5100061163 /* TuWanImageCell.m */,
+				855A29AA1DE7C38B007704F3 /* TRImageView.h */,
+				855A29AB1DE7C38B007704F3 /* TRImageView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -893,6 +898,7 @@
 				854B0C431DE12871003185E2 /* TuWanPicModel.m in Sources */,
 				856A53541DE576C9006D274E /* PSCollectionView.m in Sources */,
 				854B0C441DE12871003185E2 /* TuWanVideoModel.m in Sources */,
+				855A29AC1DE7C38B007704F3 /* TRImageView.m in Sources */,
 				856A537E1DE579D9006D274E /* DuoWanTabBarController.m in Sources */,
 				854B0C411DE12871003185E2 /* ZBItemModel.m in Sources */,
 				3804CE541BD758F10046C8C8 /* NSString+QRCode.m in Sources */,

@@ -24,18 +24,6 @@
 
 +(id)getTuWanInfoWithType:(InfoType)type start:(NSInteger)start completionHandle:(void (^)(id, NSError *))completionHandle{
     //将所有接口共有的参数放到switch的外面
-    
-    /*
-     独家：http:cache.tuwan.com/app/?mod=%25E5%2585%25AB%25E5%258D%25A6&appver=2.1&appid=1&class=heronews&start=0
-     
-         mod=%E5%85%AB%E5%8D%A6&appver=2.1&appid=1&class=heronews&start=0
-     幻化：http:cache.tuwan.com/app/?mod=%25E5%25B9%25BB%25E5%258C%2596&appver=2.1&appid=1&class=heronews&start=0
-         mod=%E5%B9%BB%E5%8C%96&appver=2.1&appid=1&class=heronews&start=0
-     趣闻：http:cache.tuwan.com/app/?appver=2.1&classmore=indexpic&start=0&class=heronews&mod=%25E8%25B6%25A3%25E9%2597%25BB&appid=1&dtid=0
-     appver=2.1&classmore=indexpic&start=0&class=heronews&mod=%E8%B6%A3%E9%97%BB&appid=1&dtid=0
-     美女：http:cache.tuwan.com/app/?appver=2.1&classmore=indexpic&start=0&class=herosnews&mod=%25E7%25BE%258E%25E5%25A5%25B3&appid=1&typechild=cos1
-     appver=2.1&classmore=indexpic&start=0&class=heronews&mod=%E7%BE%8E%E5%A5%B3&appid=1&typechild=cos1*/
-
     NSMutableDictionary *params = [NSMutableDictionary dictionaryWithDictionary:@{kAppVer,kAppId,@"start":@(start),kClassMore}];
     switch (type) {
         case InfoTypeTouTiao: {
