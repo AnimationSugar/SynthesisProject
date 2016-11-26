@@ -12,6 +12,7 @@
 #import "TuWanImageCell.h"
 #import "iCarousel.h"
 #import "TuWanHtmlViewController.h"
+#import "TuWanPicViewController.h"
 
 @interface TuWanListController ()<iCarouselDelegate,iCarouselDataSource>
 @property(nonatomic,strong)TuWanViewModel *tuwanVM;
@@ -190,20 +191,31 @@ kRemoveCellSeparator
         TuWanHtmlViewController *vc = [[TuWanHtmlViewController alloc]initWithURL:[self.tuwanVM detailURLForRowInList:indexPath.row]];
         [self.navigationController pushViewController:vc animated:YES];
     }
+    if ([self.tuwanVM isPicInListForRow:indexPath.row]) {
+        TuWanPicViewController *vc = [[TuWanPicViewController alloc]initWithAid:[self.tuwanVM aidInListForRow:indexPath.row]];
+        [self.navigationController pushViewController:vc animated:YES];
+    }
 }
--(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    
-    return [self.tuwanVM containImages:indexPath.row]?135:90;
-}
-//滚动栏中被选中出发
+
+//滚动栏中被选中触发
 -(void)carousel:(iCarousel *)carousel didSelectItemAtIndex:(NSInteger)index{
     if ([self.tuwanVM isHtmlInIndexPicForRow:index]) {
         TuWanHtmlViewController *vc = [[TuWanHtmlViewController alloc]initWithURL:[self.tuwanVM detailURLForRowInIndexPic:index]];
         [self.navigationController pushViewController:vc animated:YES];
     }
+    if ([self.tuwanVM isPicInIndexPicForRow:index]) {
+        TuWanPicViewController *vc = [[TuWanPicViewController alloc]initWithAid:[self.tuwanVM aidInIndexPicForRow:index]];
+        //获取成员变量，外部不可以获取保护和私有类型
+        //如果是继承，继承公开和保护的，私有的不可以
+        vc->public1 = @",,,";
+        [self.navigationController pushViewController:vc animated:YES];
+    }
 }
 
-
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    return [self.tuwanVM containImages:indexPath.row]?135:90;
+}
 /*
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {

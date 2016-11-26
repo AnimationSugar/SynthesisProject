@@ -8,10 +8,12 @@
 
 #import "BaseViewModel.h"
 #import "TuWanNetManager.h"
+
 @interface TuWanViewModel : BaseViewModel
 /**必须使用此初始化方法，需要一个类型*/
 -(instancetype)initWithType:(InfoType)type;
 @property(nonatomic) InfoType type;
+
 //当前页数的索引值
 @property(nonatomic)NSInteger start;
 
@@ -61,6 +63,10 @@
 /** 判断数据类型是Html  all*/
 -(BOOL)isHtmlInListForRow:(NSInteger)row;
 -(BOOL)isHtmlInIndexPicForRow:(NSInteger)row;
+
+/**返回某行数据的Aid*/
+-(NSString *)aidInListForRow:(NSInteger)row;
+-(NSString *)aidInIndexPicForRow:(NSInteger)row;
 @end
 
 

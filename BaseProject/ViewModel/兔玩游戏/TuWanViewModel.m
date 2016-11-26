@@ -74,7 +74,7 @@
     return [NSURL URLWithString:[self modelForArr:self.indexPicArr row:row].html5];
 }
 
-
+//通过行数返回此行中的对应的图片链接地址
 -(NSArray *)iconURLSForRowInList:(NSInteger)row{
     NSArray *arr = [self modelForArr:self.dataArr row:row].showitem;
     NSMutableArray *array = [NSMutableArray new];
@@ -106,6 +106,13 @@
 }
 -(BOOL)isHtmlInIndexPicForRow:(NSInteger)row{
     return [[self modelForArr:self.indexPicArr row:row].type isEqualToString:@"all"];
+}
+/**返回某行数据的Aid*/
+-(NSString *)aidInListForRow:(NSInteger)row{
+    return [self modelForArr:self.dataArr row:row].aid;
+}
+-(NSString *)aidInIndexPicForRow:(NSInteger)row{
+    return [self modelForArr:self.indexPicArr row:row].aid;
 }
 
 
