@@ -29,6 +29,10 @@
 		850EE5DB1DF8E43100E6900F /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 850EE5DA1DF8E43100E6900F /* libsqlite3.tbd */; };
 		850EE5DD1DF8E45B00E6900F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 850EE5DC1DF8E45B00E6900F /* AVFoundation.framework */; };
 		850EE5E01DF8E49600E6900F /* PlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 850EE5DF1DF8E49600E6900F /* PlayView.m */; };
+		850EE5E31DF9344800E6900F /* HeroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 850EE5E21DF9344800E6900F /* HeroViewController.m */; };
+		850EE5E61DF9347700E6900F /* BaiKeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 850EE5E51DF9347700E6900F /* BaiKeViewController.m */; };
+		850EE5E91DF9349600E6900F /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 850EE5E81DF9349600E6900F /* SearchViewController.m */; };
+		850EE5EC1DF96FA600E6900F /* SearchDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 850EE5EB1DF96FA600E6900F /* SearchDetailViewController.m */; };
 		854B0C311DE12871003185E2 /* AllHeroModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 854B0C021DE12871003185E2 /* AllHeroModel.m */; };
 		854B0C321DE12871003185E2 /* BestGroupModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 854B0C041DE12871003185E2 /* BestGroupModel.m */; };
 		854B0C331DE12871003185E2 /* FreeHeroModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 854B0C071DE12871003185E2 /* FreeHeroModel.m */; };
@@ -148,6 +152,14 @@
 		850EE5DC1DF8E45B00E6900F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		850EE5DE1DF8E49600E6900F /* PlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayView.h; sourceTree = "<group>"; };
 		850EE5DF1DF8E49600E6900F /* PlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayView.m; sourceTree = "<group>"; };
+		850EE5E11DF9344800E6900F /* HeroViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeroViewController.h; sourceTree = "<group>"; };
+		850EE5E21DF9344800E6900F /* HeroViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeroViewController.m; sourceTree = "<group>"; };
+		850EE5E41DF9347700E6900F /* BaiKeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaiKeViewController.h; sourceTree = "<group>"; };
+		850EE5E51DF9347700E6900F /* BaiKeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaiKeViewController.m; sourceTree = "<group>"; };
+		850EE5E71DF9349600E6900F /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
+		850EE5E81DF9349600E6900F /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
+		850EE5EA1DF96FA600E6900F /* SearchDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchDetailViewController.h; sourceTree = "<group>"; };
+		850EE5EB1DF96FA600E6900F /* SearchDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchDetailViewController.m; sourceTree = "<group>"; };
 		854B0C011DE12871003185E2 /* AllHeroModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AllHeroModel.h; sourceTree = "<group>"; };
 		854B0C021DE12871003185E2 /* AllHeroModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AllHeroModel.m; sourceTree = "<group>"; };
 		854B0C031DE12871003185E2 /* BestGroupModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BestGroupModel.h; sourceTree = "<group>"; };
@@ -706,6 +718,14 @@
 			children = (
 				856A537C1DE579D9006D274E /* DuoWanTabBarController.h */,
 				856A537D1DE579D9006D274E /* DuoWanTabBarController.m */,
+				850EE5E11DF9344800E6900F /* HeroViewController.h */,
+				850EE5E21DF9344800E6900F /* HeroViewController.m */,
+				850EE5E41DF9347700E6900F /* BaiKeViewController.h */,
+				850EE5E51DF9347700E6900F /* BaiKeViewController.m */,
+				850EE5E71DF9349600E6900F /* SearchViewController.h */,
+				850EE5E81DF9349600E6900F /* SearchViewController.m */,
+				850EE5EA1DF96FA600E6900F /* SearchDetailViewController.h */,
+				850EE5EB1DF96FA600E6900F /* SearchDetailViewController.m */,
 			);
 			path = "多玩盒子";
 			sourceTree = "<group>";
@@ -973,7 +993,9 @@
 				859F261F1DF7AD4300AA613E /* MusicDetailCell.m in Sources */,
 				854B0C461DE12871003185E2 /* RankingListModel.m in Sources */,
 				85D181881DE67CDC00061163 /* TuWanListCell.m in Sources */,
+				850EE5EC1DF96FA600E6900F /* SearchDetailViewController.m in Sources */,
 				855A29AF1DE7DEB2007704F3 /* TuWanHtmlViewController.m in Sources */,
+				850EE5E91DF9349600E6900F /* SearchViewController.m in Sources */,
 				854B0C5C1DE19BC3003185E2 /* TuWanNetManager.m in Sources */,
 				854B0C431DE12871003185E2 /* TuWanPicModel.m in Sources */,
 				856A53541DE576C9006D274E /* PSCollectionView.m in Sources */,
@@ -983,6 +1005,8 @@
 				850EE5E01DF8E49600E6900F /* PlayView.m in Sources */,
 				854B0C411DE12871003185E2 /* ZBItemModel.m in Sources */,
 				3804CE541BD758F10046C8C8 /* NSString+QRCode.m in Sources */,
+				850EE5E61DF9347700E6900F /* BaiKeViewController.m in Sources */,
+				850EE5E31DF9344800E6900F /* HeroViewController.m in Sources */,
 				854B0C401DE12871003185E2 /* ZBCategoryModel.m in Sources */,
 				854B0C311DE12871003185E2 /* AllHeroModel.m in Sources */,
 				85D181851DE67C4700061163 /* TuWanListController.m in Sources */,

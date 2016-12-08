@@ -57,7 +57,6 @@
     [[AVAudioSession  sharedInstance] setActive:YES error:nil];
     //需要在info文件中添加一行
     
-    
      _player = [AVPlayer playerWithURL:musicURL];
     [_player play];
     self.playBtn.selected = YES;
