@@ -76,8 +76,8 @@
     //添加播放控制视图
     [self.view addSubview:[PlayView sharedInstance]];
     [[PlayView sharedInstance] mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.centerX.mas_equalTo(0);
-        make.bottom.mas_equalTo(0);
+        make.right.mas_equalTo(5);
+        make.bottom.mas_equalTo(5);
         make.size.mas_equalTo(CGSizeMake(80, 80));
     }];
 }
@@ -99,11 +99,10 @@
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
     [[PlayView sharedInstance] playWithURL:[self.albumVM musicURLForRow:indexPath.row]];
 }
-//-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-//    return 0;
-//}
+
 -(CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath{
     return UITableViewAutomaticDimension;
 }
