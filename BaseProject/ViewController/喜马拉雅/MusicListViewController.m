@@ -46,7 +46,7 @@
                 [_tableView.header endRefreshing];
             }];
         }];
-        _tableView.footer = [MJRefreshAutoFooter footerWithRefreshingBlock:^{
+        _tableView.footer = [MJRefreshAutoNormalFooter footerWithRefreshingBlock:^{
             [self.albumVM getMoreDataCompletionHandle:^(NSError *error) {
                 if (error) {
                     [self showErrorMsg:error.localizedDescription];
@@ -95,32 +95,24 @@
     cell.fovorCountLb.text = [self.albumVM favorCountForRow:indexPath.row];
     cell.commentCountLb.text = [self.albumVM commentCountForRow:indexPath.row];
     cell.durationLb.text = [self.albumVM durationForRow:indexPath.row];
-#warning Try this:
-    /*(1) look at each constraint and try to figure out which you don't expect;
-    (2) find the code that added the unwanted constraint or constraints and fix it.
-     错误：数据不止一行，但是获取到的单元格数量只有一行*/
     return cell;
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [[PlayView sharedInstance] playWithURL:[self.albumVM musicURLForRow:indexPath.row]];
 }
--(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 0;
+//-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+//    return 0;
+//}
+-(CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return UITableViewAutomaticDimension;
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
-
 @end
+
+
+

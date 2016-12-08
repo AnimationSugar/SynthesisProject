@@ -19,11 +19,12 @@
     }];
 }
 +(id)getAlbumWithId:(NSInteger)ID page:(NSInteger)pageId completionHandle:(void (^)(id, NSError *))completionHandle{
-    //%@end已经拼入宏定义kAlbumPath中
+    //%@已经拼入宏定义kAlbumPath中
     NSString *path = [NSString stringWithFormat:kAlbumPath,@(ID),@(pageId)];
     return [self GET:path parameters:@{@"device":@"iPhone"} completionHandler:^(id responseObj, NSError *error) {
         completionHandle([AlbumModel objectWithKeyValues:responseObj],error);
     }];
 }
+
 
 @end
