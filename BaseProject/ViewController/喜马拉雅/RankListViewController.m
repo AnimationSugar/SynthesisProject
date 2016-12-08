@@ -9,6 +9,7 @@
 #import "RankListViewController.h"
 #import "XiMaCategoryCell.h"
 #import "XiMaCategoryViewModel.h"
+#import "MusicListViewController.h"
 @interface RankListViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic,strong)UITableView *tableView;
 @property(nonatomic,strong)XiMaCategoryViewModel *ximaVM;
@@ -48,16 +49,18 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [Factory addBackItemToVC:self];
+    [Factory addMenuItemToVC:self];
     self.title = @"音乐TOP50";
     
     self.tableView.header  = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
         [self.ximaVM refreshDataCompletionHandle:^(NSError *error) {
             if (error) {
-                [self showErrorMsg:error];
+                [self showErrorMsg:error.localizedDescription];
             }else{
                 [self.tableView reloadData];
             }
+            //重置脚部没用更多数据
+            [_tableView.footer resetNoMoreData];
             [_tableView.header endRefreshing];
         }];
     }];
@@ -65,7 +68,11 @@
     self.tableView.footer = [MJRefreshAutoNormalFooter footerWithRefreshingBlock:^{
         [self.ximaVM getMoreDataCompletionHandle:^(NSError *error) {
             if (error) {
-                [self showErrorMsg:error];
+                [self showErrorMsg:error.localizedDescription];
+                //当数量达到最大的时候，脚部修改显示内容
+                if (error.code == 999) {
+                    [self.tableView.footer endRefreshingWithNoMoreData];
+                }
             }else{
                 [self.tableView reloadData];
             }
@@ -91,6 +98,8 @@
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    MusicListViewController *vc  = [[MusicListViewController alloc]initWithAlbumId:[self.ximaVM albumIdForRow:indexPath.row]];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     return 170/2;

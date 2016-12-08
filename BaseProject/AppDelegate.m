@@ -12,7 +12,6 @@
 #import "TuWanModel.h"
 #import "LeftViewController.h"
 #import "TuWanViewController.h"
-#import "RankListViewController.h"
 
 @interface AppDelegate ()
 
@@ -41,8 +40,6 @@
 //    }];
     [self configGlobalUIStyle];
     self.window.rootViewController = self.sideMenu;
-    //测试代码
-    self.window.rootViewController = [RankListViewController defaultNavi];
     return YES;
 }
 

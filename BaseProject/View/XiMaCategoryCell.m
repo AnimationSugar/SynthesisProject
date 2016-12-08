@@ -12,7 +12,7 @@
 -(UILabel *)orderLb{
     if (_orderLb == nil) {
         _orderLb = [[UILabel alloc]init];
-        _orderLb.font = [UIFont boldSystemFontOfSize:18];
+        _orderLb.font = [UIFont boldSystemFontOfSize:15];
         _orderLb.textColor = [UIColor lightGrayColor];
         _orderLb.textAlignment = NSTextAlignmentCenter;
         [self.contentView addSubview:_orderLb];
@@ -21,16 +21,14 @@
         [_orderLb bk_addObserverForKeyPath:@"text" options:NSKeyValueObservingOptionNew task:^(id obj, NSDictionary *change) {
             NSString *value = change[@"new"];
             if ([value isEqualToString:@"1"]) {
-                _orderLb.textColor = [UIColor redColor];
-            }
-            if ([value isEqualToString:@"2"]) {
-                _orderLb.textColor = [UIColor blueColor];
-            }
-            if ([value isEqualToString:@"3"]) {
-                _orderLb.textColor = [UIColor greenColor];
+                _orderLb.textColor = kRGBColor(247, 31, 0);
+            }else if ([value isEqualToString:@"2"]) {
+                _orderLb.textColor = kRGBColor(246, 140, 0);
+            }else if ([value isEqualToString:@"3"]) {
+                _orderLb.textColor = kRGBColor(148, 183, 0);
             }
             else{
-                _orderLb.textColor = [UIColor blackColor];
+                _orderLb.textColor = kRGBColor(144, 144, 144);
             }
         }];
         [self.orderLb mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -117,7 +115,7 @@
         self.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
         //添加依赖autoLayout一定要有顺序，从左到右  从上倒下
         //分割线左间距调整
-        self.separatorInset = UIEdgeInsetsMake(0, 105, 0, 0);
+        self.separatorInset = UIEdgeInsetsMake(0, 122, 0, 0);
     }
     return self;
 }

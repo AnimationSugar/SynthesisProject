@@ -20,6 +20,15 @@
 		3886C0BE1BD74AFE0014E661 /* BaseNetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3886C0BD1BD74AFE0014E661 /* BaseNetManager.m */; };
 		3886C0C11BD74B090014E661 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3886C0C01BD74B090014E661 /* BaseModel.m */; };
 		6C4EC5855ECF3F45900904F6 /* libPods-BaseProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CB8A7C48330A7C9A264CD037 /* libPods-BaseProject.a */; };
+		850EE5CF1DF8E39400E6900F /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 850EE5CE1DF8E39400E6900F /* libstdc++.tbd */; };
+		850EE5D11DF8E3AA00E6900F /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 850EE5D01DF8E3AA00E6900F /* CoreTelephony.framework */; };
+		850EE5D31DF8E3C000E6900F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 850EE5D21DF8E3C000E6900F /* CoreGraphics.framework */; };
+		850EE5D51DF8E3D800E6900F /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 850EE5D41DF8E3D800E6900F /* libiconv.tbd */; };
+		850EE5D71DF8E3E500E6900F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 850EE5D61DF8E3E500E6900F /* Security.framework */; };
+		850EE5D91DF8E3FD00E6900F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 850EE5D81DF8E3FD00E6900F /* SystemConfiguration.framework */; };
+		850EE5DB1DF8E43100E6900F /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 850EE5DA1DF8E43100E6900F /* libsqlite3.tbd */; };
+		850EE5DD1DF8E45B00E6900F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 850EE5DC1DF8E45B00E6900F /* AVFoundation.framework */; };
+		850EE5E01DF8E49600E6900F /* PlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 850EE5DF1DF8E49600E6900F /* PlayView.m */; };
 		854B0C311DE12871003185E2 /* AllHeroModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 854B0C021DE12871003185E2 /* AllHeroModel.m */; };
 		854B0C321DE12871003185E2 /* BestGroupModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 854B0C041DE12871003185E2 /* BestGroupModel.m */; };
 		854B0C331DE12871003185E2 /* FreeHeroModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 854B0C071DE12871003185E2 /* FreeHeroModel.m */; };
@@ -92,6 +101,9 @@
 		856A53871DE57A91006D274E /* RankListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 856A53861DE57A91006D274E /* RankListViewController.m */; };
 		856A538A1DE57BF5006D274E /* LeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 856A53891DE57BF5006D274E /* LeftViewController.m */; };
 		856A538C1DE590CE006D274E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 856A538B1DE590CE006D274E /* Assets.xcassets */; };
+		859F261F1DF7AD4300AA613E /* MusicDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 859F261E1DF7AD4300AA613E /* MusicDetailCell.m */; };
+		85B653411DF7E9DF00665E48 /* XiMaAlbumViewmodel.m in Sources */ = {isa = PBXBuildFile; fileRef = 85B653401DF7E9DF00665E48 /* XiMaAlbumViewmodel.m */; };
+		85B653441DF7F93900665E48 /* MusicListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85B653431DF7F93900665E48 /* MusicListViewController.m */; };
 		85C80A0E1DE56A240042E3CB /* Factory.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C80A0D1DE56A240042E3CB /* Factory.m */; };
 		85C80ABA1DE56A660042E3CB /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C80A781DE56A660042E3CB /* iCarousel.m */; };
 		85D181821DE5CACE00061163 /* TuWanViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 85D181811DE5CACE00061163 /* TuWanViewModel.m */; };
@@ -126,6 +138,16 @@
 		3886C0BF1BD74B090014E661 /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
 		3886C0C01BD74B090014E661 /* BaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
 		3886C0C21BD74B430014E661 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		850EE5CE1DF8E39400E6900F /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+		850EE5D01DF8E3AA00E6900F /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		850EE5D21DF8E3C000E6900F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		850EE5D41DF8E3D800E6900F /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		850EE5D61DF8E3E500E6900F /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		850EE5D81DF8E3FD00E6900F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		850EE5DA1DF8E43100E6900F /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		850EE5DC1DF8E45B00E6900F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		850EE5DE1DF8E49600E6900F /* PlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayView.h; sourceTree = "<group>"; };
+		850EE5DF1DF8E49600E6900F /* PlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayView.m; sourceTree = "<group>"; };
 		854B0C011DE12871003185E2 /* AllHeroModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AllHeroModel.h; sourceTree = "<group>"; };
 		854B0C021DE12871003185E2 /* AllHeroModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AllHeroModel.m; sourceTree = "<group>"; };
 		854B0C031DE12871003185E2 /* BestGroupModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BestGroupModel.h; sourceTree = "<group>"; };
@@ -256,6 +278,12 @@
 		856A53881DE57BF5006D274E /* LeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftViewController.h; sourceTree = "<group>"; };
 		856A53891DE57BF5006D274E /* LeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftViewController.m; sourceTree = "<group>"; };
 		856A538B1DE590CE006D274E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		859F261D1DF7AD4300AA613E /* MusicDetailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicDetailCell.h; sourceTree = "<group>"; };
+		859F261E1DF7AD4300AA613E /* MusicDetailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicDetailCell.m; sourceTree = "<group>"; };
+		85B6533F1DF7E9DF00665E48 /* XiMaAlbumViewmodel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XiMaAlbumViewmodel.h; sourceTree = "<group>"; };
+		85B653401DF7E9DF00665E48 /* XiMaAlbumViewmodel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XiMaAlbumViewmodel.m; sourceTree = "<group>"; };
+		85B653421DF7F93900665E48 /* MusicListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicListViewController.h; sourceTree = "<group>"; };
+		85B653431DF7F93900665E48 /* MusicListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicListViewController.m; sourceTree = "<group>"; };
 		85C80A0C1DE56A240042E3CB /* Factory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Factory.h; sourceTree = "<group>"; };
 		85C80A0D1DE56A240042E3CB /* Factory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Factory.m; sourceTree = "<group>"; };
 		85C80A771DE56A660042E3CB /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
@@ -279,6 +307,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				850EE5DD1DF8E45B00E6900F /* AVFoundation.framework in Frameworks */,
+				850EE5DB1DF8E43100E6900F /* libsqlite3.tbd in Frameworks */,
+				850EE5D91DF8E3FD00E6900F /* SystemConfiguration.framework in Frameworks */,
+				850EE5D71DF8E3E500E6900F /* Security.framework in Frameworks */,
+				850EE5D51DF8E3D800E6900F /* libiconv.tbd in Frameworks */,
+				850EE5D31DF8E3C000E6900F /* CoreGraphics.framework in Frameworks */,
+				850EE5D11DF8E3AA00E6900F /* CoreTelephony.framework in Frameworks */,
+				850EE5CF1DF8E39400E6900F /* libstdc++.tbd in Frameworks */,
 				856A53631DE576C9006D274E /* libSocialQQ.a in Frameworks */,
 				856A53591DE576C9006D274E /* libUMSocial_Sdk_4.2.5.a in Frameworks */,
 				856A53671DE576C9006D274E /* libWeChatSDK.a in Frameworks */,
@@ -434,6 +470,10 @@
 				855A29AB1DE7C38B007704F3 /* TRImageView.m */,
 				855A29B61DE80F91007704F3 /* XiMaCategoryCell.h */,
 				855A29B71DE80F91007704F3 /* XiMaCategoryCell.m */,
+				859F261D1DF7AD4300AA613E /* MusicDetailCell.h */,
+				859F261E1DF7AD4300AA613E /* MusicDetailCell.m */,
+				850EE5DE1DF8E49600E6900F /* PlayView.h */,
+				850EE5DF1DF8E49600E6900F /* PlayView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -699,6 +739,8 @@
 			children = (
 				856A53851DE57A91006D274E /* RankListViewController.h */,
 				856A53861DE57A91006D274E /* RankListViewController.m */,
+				85B653421DF7F93900665E48 /* MusicListViewController.h */,
+				85B653431DF7F93900665E48 /* MusicListViewController.m */,
 			);
 			path = "喜马拉雅";
 			sourceTree = "<group>";
@@ -733,6 +775,8 @@
 			children = (
 				855A29B91DE92124007704F3 /* XiMaCategoryViewModel.h */,
 				855A29BA1DE92124007704F3 /* XiMaCategoryViewModel.m */,
+				85B6533F1DF7E9DF00665E48 /* XiMaAlbumViewmodel.h */,
+				85B653401DF7E9DF00665E48 /* XiMaAlbumViewmodel.m */,
 			);
 			path = "喜马拉雅";
 			sourceTree = "<group>";
@@ -758,6 +802,14 @@
 		FA3445AEA3874C1D4FE61EAF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				850EE5DC1DF8E45B00E6900F /* AVFoundation.framework */,
+				850EE5DA1DF8E43100E6900F /* libsqlite3.tbd */,
+				850EE5D81DF8E3FD00E6900F /* SystemConfiguration.framework */,
+				850EE5D61DF8E3E500E6900F /* Security.framework */,
+				850EE5D41DF8E3D800E6900F /* libiconv.tbd */,
+				850EE5D21DF8E3C000E6900F /* CoreGraphics.framework */,
+				850EE5D01DF8E3AA00E6900F /* CoreTelephony.framework */,
+				850EE5CE1DF8E39400E6900F /* libstdc++.tbd */,
 				856A530F1DE57551006D274E /* libz.tbd */,
 				3879FE801BDFA8E100A99990 /* libsqlite3.0.tbd */,
 				CB8A7C48330A7C9A264CD037 /* libPods-BaseProject.a */,
@@ -918,6 +970,7 @@
 				854B0C3A1DE12871003185E2 /* HeroVideoModel.m in Sources */,
 				854B0C3F1DE12871003185E2 /* ToolMenuModel.m in Sources */,
 				3886C0BE1BD74AFE0014E661 /* BaseNetManager.m in Sources */,
+				859F261F1DF7AD4300AA613E /* MusicDetailCell.m in Sources */,
 				854B0C461DE12871003185E2 /* RankingListModel.m in Sources */,
 				85D181881DE67CDC00061163 /* TuWanListCell.m in Sources */,
 				855A29AF1DE7DEB2007704F3 /* TuWanHtmlViewController.m in Sources */,
@@ -927,6 +980,7 @@
 				854B0C441DE12871003185E2 /* TuWanVideoModel.m in Sources */,
 				855A29AC1DE7C38B007704F3 /* TRImageView.m in Sources */,
 				856A537E1DE579D9006D274E /* DuoWanTabBarController.m in Sources */,
+				850EE5E01DF8E49600E6900F /* PlayView.m in Sources */,
 				854B0C411DE12871003185E2 /* ZBItemModel.m in Sources */,
 				3804CE541BD758F10046C8C8 /* NSString+QRCode.m in Sources */,
 				854B0C401DE12871003185E2 /* ZBCategoryModel.m in Sources */,
@@ -954,9 +1008,11 @@
 				856A53551DE576C9006D274E /* PSCollectionViewCell.m in Sources */,
 				3886C0BB1BD74AE90014E661 /* BaseViewModel.m in Sources */,
 				856A53871DE57A91006D274E /* RankListViewController.m in Sources */,
+				85B653411DF7E9DF00665E48 /* XiMaAlbumViewmodel.m in Sources */,
 				855A29B81DE80F91007704F3 /* XiMaCategoryCell.m in Sources */,
 				854B0C351DE12871003185E2 /* HeroChangeModel.m in Sources */,
 				85C80A0E1DE56A240042E3CB /* Factory.m in Sources */,
+				85B653441DF7F93900665E48 /* MusicListViewController.m in Sources */,
 				856A53841DE57A59006D274E /* MyInfoViewController.m in Sources */,
 				854B0C341DE12871003185E2 /* GiftModel.m in Sources */,
 				3886C0C11BD74B090014E661 /* BaseModel.m in Sources */,
