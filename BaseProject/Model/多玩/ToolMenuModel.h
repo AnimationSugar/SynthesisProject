@@ -14,6 +14,7 @@
 @property (nonatomic, copy) NSString *name;
 @property (nonatomic, copy) NSString *type;
 @property (nonatomic, copy) NSString *tag;
+//自动解析出来的没有这个属性，需要手动添加
 @property (nonatomic, copy) NSString *url;
 
 @end

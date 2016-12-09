@@ -33,6 +33,7 @@
 		850EE5E61DF9347700E6900F /* BaiKeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 850EE5E51DF9347700E6900F /* BaiKeViewController.m */; };
 		850EE5E91DF9349600E6900F /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 850EE5E81DF9349600E6900F /* SearchViewController.m */; };
 		850EE5EC1DF96FA600E6900F /* SearchDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 850EE5EB1DF96FA600E6900F /* SearchDetailViewController.m */; };
+		850EE5EF1DFA319B00E6900F /* ToolMenuViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 850EE5EE1DFA319B00E6900F /* ToolMenuViewModel.m */; };
 		854B0C311DE12871003185E2 /* AllHeroModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 854B0C021DE12871003185E2 /* AllHeroModel.m */; };
 		854B0C321DE12871003185E2 /* BestGroupModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 854B0C041DE12871003185E2 /* BestGroupModel.m */; };
 		854B0C331DE12871003185E2 /* FreeHeroModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 854B0C071DE12871003185E2 /* FreeHeroModel.m */; };
@@ -64,6 +65,8 @@
 		855A29B51DE80164007704F3 /* TuWanPicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 855A29B41DE80164007704F3 /* TuWanPicViewController.m */; };
 		855A29B81DE80F91007704F3 /* XiMaCategoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 855A29B71DE80F91007704F3 /* XiMaCategoryCell.m */; };
 		855A29BB1DE92124007704F3 /* XiMaCategoryViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 855A29BA1DE92124007704F3 /* XiMaCategoryViewModel.m */; };
+		855E6E951DFA521200DAB8A9 /* BestGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 855E6E941DFA521200DAB8A9 /* BestGroupViewController.m */; };
+		855E6E981DFA54A500DAB8A9 /* BestGroupDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 855E6E971DFA54A500DAB8A9 /* BestGroupDetailViewController.m */; };
 		856A53101DE57551006D274E /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 856A530F1DE57551006D274E /* libz.tbd */; };
 		856A53521DE576C9006D274E /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 856A53121DE576C9006D274E /* .gitignore */; };
 		856A53531DE576C9006D274E /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 856A53131DE576C9006D274E /* LICENSE */; };
@@ -160,6 +163,8 @@
 		850EE5E81DF9349600E6900F /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
 		850EE5EA1DF96FA600E6900F /* SearchDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchDetailViewController.h; sourceTree = "<group>"; };
 		850EE5EB1DF96FA600E6900F /* SearchDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchDetailViewController.m; sourceTree = "<group>"; };
+		850EE5ED1DFA319B00E6900F /* ToolMenuViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToolMenuViewModel.h; sourceTree = "<group>"; };
+		850EE5EE1DFA319B00E6900F /* ToolMenuViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToolMenuViewModel.m; sourceTree = "<group>"; };
 		854B0C011DE12871003185E2 /* AllHeroModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AllHeroModel.h; sourceTree = "<group>"; };
 		854B0C021DE12871003185E2 /* AllHeroModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AllHeroModel.m; sourceTree = "<group>"; };
 		854B0C031DE12871003185E2 /* BestGroupModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BestGroupModel.h; sourceTree = "<group>"; };
@@ -224,6 +229,10 @@
 		855A29B71DE80F91007704F3 /* XiMaCategoryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XiMaCategoryCell.m; sourceTree = "<group>"; };
 		855A29B91DE92124007704F3 /* XiMaCategoryViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XiMaCategoryViewModel.h; sourceTree = "<group>"; };
 		855A29BA1DE92124007704F3 /* XiMaCategoryViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XiMaCategoryViewModel.m; sourceTree = "<group>"; };
+		855E6E931DFA521200DAB8A9 /* BestGroupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BestGroupViewController.h; sourceTree = "<group>"; };
+		855E6E941DFA521200DAB8A9 /* BestGroupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BestGroupViewController.m; sourceTree = "<group>"; };
+		855E6E961DFA54A500DAB8A9 /* BestGroupDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BestGroupDetailViewController.h; sourceTree = "<group>"; };
+		855E6E971DFA54A500DAB8A9 /* BestGroupDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BestGroupDetailViewController.m; sourceTree = "<group>"; };
 		856A530F1DE57551006D274E /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		856A53121DE576C9006D274E /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		856A53131DE576C9006D274E /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
@@ -726,6 +735,10 @@
 				850EE5E81DF9349600E6900F /* SearchViewController.m */,
 				850EE5EA1DF96FA600E6900F /* SearchDetailViewController.h */,
 				850EE5EB1DF96FA600E6900F /* SearchDetailViewController.m */,
+				855E6E931DFA521200DAB8A9 /* BestGroupViewController.h */,
+				855E6E941DFA521200DAB8A9 /* BestGroupViewController.m */,
+				855E6E961DFA54A500DAB8A9 /* BestGroupDetailViewController.h */,
+				855E6E971DFA54A500DAB8A9 /* BestGroupDetailViewController.m */,
 			);
 			path = "多玩盒子";
 			sourceTree = "<group>";
@@ -768,6 +781,8 @@
 		856A53781DE5791E006D274E /* 多玩盒子 */ = {
 			isa = PBXGroup;
 			children = (
+				850EE5ED1DFA319B00E6900F /* ToolMenuViewModel.h */,
+				850EE5EE1DFA319B00E6900F /* ToolMenuViewModel.m */,
 			);
 			path = "多玩盒子";
 			sourceTree = "<group>";
@@ -998,6 +1013,7 @@
 				850EE5E91DF9349600E6900F /* SearchViewController.m in Sources */,
 				854B0C5C1DE19BC3003185E2 /* TuWanNetManager.m in Sources */,
 				854B0C431DE12871003185E2 /* TuWanPicModel.m in Sources */,
+				855E6E951DFA521200DAB8A9 /* BestGroupViewController.m in Sources */,
 				856A53541DE576C9006D274E /* PSCollectionView.m in Sources */,
 				854B0C441DE12871003185E2 /* TuWanVideoModel.m in Sources */,
 				855A29AC1DE7C38B007704F3 /* TRImageView.m in Sources */,
@@ -1012,6 +1028,7 @@
 				85D181851DE67C4700061163 /* TuWanListController.m in Sources */,
 				854B0C3C1DE12871003185E2 /* ItemDetailModel.m in Sources */,
 				855A29B21DE7F96F007704F3 /* TuWanPicViewModel.m in Sources */,
+				850EE5EF1DFA319B00E6900F /* ToolMenuViewModel.m in Sources */,
 				854B0C3B1DE12871003185E2 /* HeroWeekDataModel.m in Sources */,
 				3804CE531BD758F10046C8C8 /* NSString+PJR.m in Sources */,
 				854B0C3E1DE12871003185E2 /* SumAbilityModel.m in Sources */,
@@ -1030,6 +1047,7 @@
 				854B0C321DE12871003185E2 /* BestGroupModel.m in Sources */,
 				85D181821DE5CACE00061163 /* TuWanViewModel.m in Sources */,
 				856A53551DE576C9006D274E /* PSCollectionViewCell.m in Sources */,
+				855E6E981DFA54A500DAB8A9 /* BestGroupDetailViewController.m in Sources */,
 				3886C0BB1BD74AE90014E661 /* BaseViewModel.m in Sources */,
 				856A53871DE57A91006D274E /* RankListViewController.m in Sources */,
 				85B653411DF7E9DF00665E48 /* XiMaAlbumViewmodel.m in Sources */,
