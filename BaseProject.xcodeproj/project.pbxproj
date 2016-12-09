@@ -67,6 +67,10 @@
 		855A29BB1DE92124007704F3 /* XiMaCategoryViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 855A29BA1DE92124007704F3 /* XiMaCategoryViewModel.m */; };
 		855E6E951DFA521200DAB8A9 /* BestGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 855E6E941DFA521200DAB8A9 /* BestGroupViewController.m */; };
 		855E6E981DFA54A500DAB8A9 /* BestGroupDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 855E6E971DFA54A500DAB8A9 /* BestGroupDetailViewController.m */; };
+		855E6E9B1DFA6C0900DAB8A9 /* BestGroupViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 855E6E9A1DFA6C0900DAB8A9 /* BestGroupViewModel.m */; };
+		855E6E9E1DFA731100DAB8A9 /* BestGroupCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 855E6E9D1DFA731100DAB8A9 /* BestGroupCell.m */; };
+		855E6EA41DFA870500DAB8A9 /* BestGroupDetailHeroCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 855E6EA31DFA870500DAB8A9 /* BestGroupDetailHeroCell.m */; };
+		855E6EA71DFA882400DAB8A9 /* BestGroupDetailIntroCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 855E6EA61DFA882400DAB8A9 /* BestGroupDetailIntroCell.m */; };
 		856A53101DE57551006D274E /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 856A530F1DE57551006D274E /* libz.tbd */; };
 		856A53521DE576C9006D274E /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 856A53121DE576C9006D274E /* .gitignore */; };
 		856A53531DE576C9006D274E /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 856A53131DE576C9006D274E /* LICENSE */; };
@@ -233,6 +237,14 @@
 		855E6E941DFA521200DAB8A9 /* BestGroupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BestGroupViewController.m; sourceTree = "<group>"; };
 		855E6E961DFA54A500DAB8A9 /* BestGroupDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BestGroupDetailViewController.h; sourceTree = "<group>"; };
 		855E6E971DFA54A500DAB8A9 /* BestGroupDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BestGroupDetailViewController.m; sourceTree = "<group>"; };
+		855E6E991DFA6C0900DAB8A9 /* BestGroupViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BestGroupViewModel.h; sourceTree = "<group>"; };
+		855E6E9A1DFA6C0900DAB8A9 /* BestGroupViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BestGroupViewModel.m; sourceTree = "<group>"; };
+		855E6E9C1DFA731100DAB8A9 /* BestGroupCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BestGroupCell.h; sourceTree = "<group>"; };
+		855E6E9D1DFA731100DAB8A9 /* BestGroupCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BestGroupCell.m; sourceTree = "<group>"; };
+		855E6EA21DFA870500DAB8A9 /* BestGroupDetailHeroCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BestGroupDetailHeroCell.h; sourceTree = "<group>"; };
+		855E6EA31DFA870500DAB8A9 /* BestGroupDetailHeroCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BestGroupDetailHeroCell.m; sourceTree = "<group>"; };
+		855E6EA51DFA882400DAB8A9 /* BestGroupDetailIntroCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BestGroupDetailIntroCell.h; sourceTree = "<group>"; };
+		855E6EA61DFA882400DAB8A9 /* BestGroupDetailIntroCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BestGroupDetailIntroCell.m; sourceTree = "<group>"; };
 		856A530F1DE57551006D274E /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		856A53121DE576C9006D274E /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		856A53131DE576C9006D274E /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
@@ -495,6 +507,12 @@
 				859F261E1DF7AD4300AA613E /* MusicDetailCell.m */,
 				850EE5DE1DF8E49600E6900F /* PlayView.h */,
 				850EE5DF1DF8E49600E6900F /* PlayView.m */,
+				855E6E9C1DFA731100DAB8A9 /* BestGroupCell.h */,
+				855E6E9D1DFA731100DAB8A9 /* BestGroupCell.m */,
+				855E6EA51DFA882400DAB8A9 /* BestGroupDetailIntroCell.h */,
+				855E6EA61DFA882400DAB8A9 /* BestGroupDetailIntroCell.m */,
+				855E6EA21DFA870500DAB8A9 /* BestGroupDetailHeroCell.h */,
+				855E6EA31DFA870500DAB8A9 /* BestGroupDetailHeroCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -783,6 +801,8 @@
 			children = (
 				850EE5ED1DFA319B00E6900F /* ToolMenuViewModel.h */,
 				850EE5EE1DFA319B00E6900F /* ToolMenuViewModel.m */,
+				855E6E991DFA6C0900DAB8A9 /* BestGroupViewModel.h */,
+				855E6E9A1DFA6C0900DAB8A9 /* BestGroupViewModel.m */,
 			);
 			path = "多玩盒子";
 			sourceTree = "<group>";
@@ -1003,6 +1023,7 @@
 				855A29BB1DE92124007704F3 /* XiMaCategoryViewModel.m in Sources */,
 				854B0C391DE12871003185E2 /* HeroSkinModel.m in Sources */,
 				854B0C3A1DE12871003185E2 /* HeroVideoModel.m in Sources */,
+				855E6E9B1DFA6C0900DAB8A9 /* BestGroupViewModel.m in Sources */,
 				854B0C3F1DE12871003185E2 /* ToolMenuModel.m in Sources */,
 				3886C0BE1BD74AFE0014E661 /* BaseNetManager.m in Sources */,
 				859F261F1DF7AD4300AA613E /* MusicDetailCell.m in Sources */,
@@ -1034,9 +1055,11 @@
 				854B0C3E1DE12871003185E2 /* SumAbilityModel.m in Sources */,
 				854B0C361DE12871003185E2 /* HeroCZModel.m in Sources */,
 				855A29B51DE80164007704F3 /* TuWanPicViewController.m in Sources */,
+				855E6EA71DFA882400DAB8A9 /* BestGroupDetailIntroCell.m in Sources */,
 				854B0C451DE12871003185E2 /* AlbumModel.m in Sources */,
 				3886C09B1BD748830014E661 /* AppDelegate.m in Sources */,
 				854B0C591DE19BAC003185E2 /* DuoWanNetManager.m in Sources */,
+				855E6EA41DFA870500DAB8A9 /* BestGroupDetailHeroCell.m in Sources */,
 				856A53561DE576C9006D274E /* README.md in Sources */,
 				85C80ABA1DE56A660042E3CB /* iCarousel.m in Sources */,
 				854B0C5F1DE19BD9003185E2 /* XiMaNetManager.m in Sources */,
@@ -1060,6 +1083,7 @@
 				3886C0C11BD74B090014E661 /* BaseModel.m in Sources */,
 				854B0C421DE12871003185E2 /* TuWanModel.m in Sources */,
 				3886C0981BD748830014E661 /* main.m in Sources */,
+				855E6E9E1DFA731100DAB8A9 /* BestGroupCell.m in Sources */,
 				3804CE521BD758F10046C8C8 /* NSObject+Common.m in Sources */,
 				856A538A1DE57BF5006D274E /* LeftViewController.m in Sources */,
 				854B0C331DE12871003185E2 /* FreeHeroModel.m in Sources */,

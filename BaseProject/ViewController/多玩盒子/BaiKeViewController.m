@@ -10,6 +10,7 @@
 #import "ToolMenuViewModel.h"
 #import "TRImageView.h"
 #import "TuWanHtmlViewController.h"
+#import "BestGroupViewController.h"
 
 /**创建自定义Cell：图+题目*/
 @interface BaikeCell : UITableViewCell
@@ -137,6 +138,10 @@ kRemoveCellSeparator
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     if ([self.toolVM itemTypeForRow:indexPath.row] == ToolMenuItemTypeWeb) {
         TuWanHtmlViewController *vc = [[TuWanHtmlViewController alloc]initWithURL:[self.toolVM webURLForRow:indexPath.row]];
+        vc.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:vc animated:YES];
+    }else if ([[self.toolVM tagForRow:indexPath.row] isEqualToString:@"best_group"]){
+        BestGroupViewController *vc = [BestGroupViewController new];
         vc.hidesBottomBarWhenPushed = YES;
         [self.navigationController pushViewController:vc animated:YES];
     }

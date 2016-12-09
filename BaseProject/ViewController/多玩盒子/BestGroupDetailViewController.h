@@ -17,5 +17,10 @@
  6）
  */
 @interface BestGroupDetailViewController : UIViewController
+-(id)initWithTitle:(NSString *)title desc:(NSString *)desc icons:(NSArray *)icons descs:(NSArray *)descs;
+@property(nonatomic,strong)NSString *title0;
+@property(nonatomic,strong)NSString *desc;
+@property(nonatomic,strong)NSArray *descs;
+@property(nonatomic,strong)NSArray *icons;
 
 @end
