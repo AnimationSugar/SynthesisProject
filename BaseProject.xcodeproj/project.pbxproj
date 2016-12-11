@@ -20,6 +20,9 @@
 		3886C0BE1BD74AFE0014E661 /* BaseNetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3886C0BD1BD74AFE0014E661 /* BaseNetManager.m */; };
 		3886C0C11BD74B090014E661 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3886C0C01BD74B090014E661 /* BaseModel.m */; };
 		6C4EC5855ECF3F45900904F6 /* libPods-BaseProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CB8A7C48330A7C9A264CD037 /* libPods-BaseProject.a */; };
+		85048A3D1DFCD3970095C65F /* SumAbilityViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 85048A3C1DFCD3970095C65F /* SumAbilityViewModel.m */; };
+		85048A401DFCD9110095C65F /* SumAbilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85048A3F1DFCD9110095C65F /* SumAbilityViewController.m */; };
+		85048A431DFCEFB70095C65F /* SunAbilityDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85048A421DFCEFB70095C65F /* SunAbilityDetailViewController.m */; };
 		850EE5CF1DF8E39400E6900F /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 850EE5CE1DF8E39400E6900F /* libstdc++.tbd */; };
 		850EE5D11DF8E3AA00E6900F /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 850EE5D01DF8E3AA00E6900F /* CoreTelephony.framework */; };
 		850EE5D31DF8E3C000E6900F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 850EE5D21DF8E3C000E6900F /* CoreGraphics.framework */; };
@@ -156,6 +159,12 @@
 		3886C0BF1BD74B090014E661 /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
 		3886C0C01BD74B090014E661 /* BaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
 		3886C0C21BD74B430014E661 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		85048A3B1DFCD3970095C65F /* SumAbilityViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SumAbilityViewModel.h; sourceTree = "<group>"; };
+		85048A3C1DFCD3970095C65F /* SumAbilityViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SumAbilityViewModel.m; sourceTree = "<group>"; };
+		85048A3E1DFCD9110095C65F /* SumAbilityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SumAbilityViewController.h; sourceTree = "<group>"; };
+		85048A3F1DFCD9110095C65F /* SumAbilityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SumAbilityViewController.m; sourceTree = "<group>"; };
+		85048A411DFCEFB70095C65F /* SunAbilityDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SunAbilityDetailViewController.h; sourceTree = "<group>"; };
+		85048A421DFCEFB70095C65F /* SunAbilityDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SunAbilityDetailViewController.m; sourceTree = "<group>"; };
 		850EE5CE1DF8E39400E6900F /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
 		850EE5D01DF8E3AA00E6900F /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		850EE5D21DF8E3C000E6900F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -786,6 +795,10 @@
 				857263C41DFB84F4007DAA99 /* ZBItemViewController.m */,
 				857263C91DFBF613007DAA99 /* ZBDetailViewControlle.h */,
 				857263CA1DFBF613007DAA99 /* ZBDetailViewControlle.m */,
+				85048A3E1DFCD9110095C65F /* SumAbilityViewController.h */,
+				85048A3F1DFCD9110095C65F /* SumAbilityViewController.m */,
+				85048A411DFCEFB70095C65F /* SunAbilityDetailViewController.h */,
+				85048A421DFCEFB70095C65F /* SunAbilityDetailViewController.m */,
 			);
 			path = "多玩盒子";
 			sourceTree = "<group>";
@@ -838,6 +851,8 @@
 				855E6EB21DFAD52200DAB8A9 /* ZBItemViewModel.m */,
 				857263C61DFBF265007DAA99 /* ZBDetailViewModel.h */,
 				857263C71DFBF265007DAA99 /* ZBDetailViewModel.m */,
+				85048A3B1DFCD3970095C65F /* SumAbilityViewModel.h */,
+				85048A3C1DFCD3970095C65F /* SumAbilityViewModel.m */,
 			);
 			path = "多玩盒子";
 			sourceTree = "<group>";
@@ -1094,6 +1109,7 @@
 				854B0C3B1DE12871003185E2 /* HeroWeekDataModel.m in Sources */,
 				3804CE531BD758F10046C8C8 /* NSString+PJR.m in Sources */,
 				854B0C3E1DE12871003185E2 /* SumAbilityModel.m in Sources */,
+				85048A3D1DFCD3970095C65F /* SumAbilityViewModel.m in Sources */,
 				854B0C361DE12871003185E2 /* HeroCZModel.m in Sources */,
 				855A29B51DE80164007704F3 /* TuWanPicViewController.m in Sources */,
 				855E6EA71DFA882400DAB8A9 /* BestGroupDetailIntroCell.m in Sources */,
@@ -1104,6 +1120,7 @@
 				856A53561DE576C9006D274E /* README.md in Sources */,
 				85C80ABA1DE56A660042E3CB /* iCarousel.m in Sources */,
 				854B0C5F1DE19BD9003185E2 /* XiMaNetManager.m in Sources */,
+				85048A401DFCD9110095C65F /* SumAbilityViewController.m in Sources */,
 				854B0C381DE12871003185E2 /* HeroGiftModel.m in Sources */,
 				85D1818B1DE6BA5100061163 /* TuWanImageCell.m in Sources */,
 				3804CE511BD758F10046C8C8 /* AppDelegate+Category.m in Sources */,
@@ -1121,6 +1138,7 @@
 				85C80A0E1DE56A240042E3CB /* Factory.m in Sources */,
 				85B653441DF7F93900665E48 /* MusicListViewController.m in Sources */,
 				856A53841DE57A59006D274E /* MyInfoViewController.m in Sources */,
+				85048A431DFCEFB70095C65F /* SunAbilityDetailViewController.m in Sources */,
 				854B0C341DE12871003185E2 /* GiftModel.m in Sources */,
 				3886C0C11BD74B090014E661 /* BaseModel.m in Sources */,
 				854B0C421DE12871003185E2 /* TuWanModel.m in Sources */,
