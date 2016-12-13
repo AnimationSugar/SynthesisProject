@@ -44,6 +44,7 @@
     [self hideProgress];
 }
 - (void)webView:(UIWebView *)webView didFailLoadWithError:(nullable NSError *)error{
+    //战斗力排行榜页面加载的时候会在全局断点的情况下崩溃，猜测原因是缓冲区加载不够，导致后续的程序不能够运行 
     [self hideProgress];
 }
 
